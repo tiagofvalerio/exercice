@@ -3,8 +3,22 @@
 
 **Installing**
 <br />
-To build de project running tests
-<br />
+To build the project running tests
 ```
 $ ./gradlew build
+```
+
+<br />
+To build the project without running tests
+
+```
+$ ./gradlew build -x test
+```
+
+<br />
+If there's docker installed:
+
+```
+$ docker build -t exercice .
+$ docker run --name exercice -d exercice
 ```
