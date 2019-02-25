@@ -3,7 +3,7 @@ install: true
 
 env:
   global:
-    - COVERALLS_REPO_TOKEN=xvogHxLiHie4MgON9hDZ0q9m05RWwcWvW
+    - COVERALLS_REPO_TOKEN=hkm4r3jgpBcOEoUrX9lTS1IjM1MtKGqKP
 
 jdk:
   - oraclejdk8
