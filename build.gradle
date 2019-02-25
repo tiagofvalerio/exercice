@@ -37,6 +37,10 @@ jacocoTestReport {
     }
 }
 
+bootJar {
+   archiveName = 'exercice.jar'
+}
+
 try {
     buildScan {
         termsOfServiceUrl = 'https://gradle.com/terms-of-service'
