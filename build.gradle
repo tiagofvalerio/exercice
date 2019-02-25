@@ -37,10 +37,6 @@ jacocoTestReport {
     }
 }
 
-coveralls {
-    jacocoReportPath 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-}
-
 try {
     buildScan {
         termsOfServiceUrl = 'https://gradle.com/terms-of-service'
