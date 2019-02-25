@@ -37,6 +37,14 @@ jacocoTestReport {
     }
 }
 
-//coveralls {
-//#    jacocoReportPath 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-//}
+coveralls {
+    jacocoReportPath 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
+}
+
+try {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+} catch (Exception e){
+}
