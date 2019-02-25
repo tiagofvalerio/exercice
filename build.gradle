@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.1.3.RELEASE'
 	id 'java'
 	id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.8.2'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -24,7 +25,6 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jetty'
 	implementation 'com.h2database:h2'
 	compile 'com.google.code.gson:gson:2.8.5'
-	compile 'org.eluder.coveralls:coveralls-maven-plugin:4.3.0'
 	implementation 'io.springfox:springfox-swagger2:2.9.2'
 	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
