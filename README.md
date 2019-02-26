@@ -1,5 +1,5 @@
-# Exercice - Project of an exercice using Spring boot 
-[![Build Status](https://travis-ci.com/tiagofvalerio/exercice.svg?branch=master)](https://travis-ci.com/tiagofvalerio/exercice) [![Coverage Status](https://coveralls.io/repos/github/tiagofvalerio/exercice/badge.svg)](https://coveralls.io/github/tiagofvalerio/exercice)
+# Exercise - Project of an exercise using Spring boot 
+[![Build Status](https://travis-ci.com/tiagofvalerio/exercise.svg?branch=master)](https://travis-ci.com/tiagofvalerio/exercise) [![Coverage Status](https://coveralls.io/repos/github/tiagofvalerio/exercise/badge.svg)](https://coveralls.io/github/tiagofvalerio/exercise)
 
 ## Installing
 
@@ -21,15 +21,15 @@ $ ./gradlew build -x test
 If there's docker installed
 
 ```
-$ docker build -t exercice .
-$ docker run --name exercice -d exercice
+$ docker build -t exercise .
+$ docker run --name exercise -d exercise
 ```
 
 <br />
 To view container log
 
 ```
-$ docker logs -f exercice
+$ docker logs -f exercise
 ```
 
 <br />

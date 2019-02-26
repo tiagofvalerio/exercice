@@ -37,10 +37,17 @@ jacocoTestReport {
         xml.enabled true
         html.enabled true
     }
+    afterEvaluate {
+        classDirectories = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['br/com/tvalerio/exercise/ExerciseApplication*',
+            							'br/com/tvalerio/exercise/ApplicationContextInitializer*',
+            							'br/com/tvalerio/exercise/integration/*'])
+        })
+    }
 }
 
 bootJar {
-   archiveName = 'exercice.jar'
+   archiveName = 'exercise.jar'
 }
 
 try {
