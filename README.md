@@ -22,7 +22,7 @@ If there's docker installed
 
 ```
 $ docker build -t exercise .
-$ docker run --name exercise -d exercise
+$ docker run -p 8080:8080 --name exercise -d exercise
 ```
 
 <br />
