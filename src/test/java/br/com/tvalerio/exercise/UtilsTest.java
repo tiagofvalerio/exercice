@@ -1,7 +1,8 @@
 package br.com.tvalerio.exercise;
 
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.*;
 
 import java.time.LocalDate;
 
@@ -20,11 +21,17 @@ public class UtilsTest {
     private Utils utils;
 
     @Test
-    public void shouldGetDayOfWeek() throws Exception {
+    public void shouldGetDayOfWeekMock() throws Exception {
 
         Mockito.when(utils.getDayOfWeek()).thenReturn(
                 LocalDate.of(2019, 02, 25).getDayOfWeek().name().toUpperCase());
 
         assertThat(utils.getDayOfWeek(), is("MONDAY"));
+    }
+
+    @Test
+    public void shouldGetDayOfWeek() throws Exception {
+        Utils u = new Utils();
+        assertThat(u.getDayOfWeek(), notNullValue());
     }
 }
